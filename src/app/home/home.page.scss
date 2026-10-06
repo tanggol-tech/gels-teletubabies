@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 ion-content {
   --background: #c8f7c5;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .banner {
-  --background: #87ceeb;
-  --color: #7b3fa0;
-  font-family: 'Inter', sans-serif;
+  --background: #b6dae9;
+  --color: #2c0742;
+  font-family: 'Poppins', sans-serif;
 }
 
 .theme-button {
-  --color: #7b3fa0;
+  --color: #2c0742;
   margin-inline-end: 8px;
 }
 
@@ -22,11 +22,12 @@ ion-content {
   height: 18px;
   border: 2px solid rgba(0, 0, 0, 0.25);
   border-radius: 50%;
+  margin: 10px;
 }
 
 .sun {
-  width: 46px;
-  height: 46px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: #fdd835;
   vertical-align: middle;
@@ -43,7 +44,7 @@ ion-content {
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(40, 40, 42, 0.08);
   background: #ffffff;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   p { margin: 0; }
   h2 { margin: 4px 0 0; font-size: 2rem; }
 }
@@ -55,7 +56,7 @@ ion-content {
   --background: #ffffff;
   --color: #1d1d1f;
   margin-top: 12px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   border: 2px solid #dff4d6;
   border-radius: 5px;
 }
@@ -67,6 +68,9 @@ ion-card {
   --color: #1d1d1f;
   border-radius: 12px;
   border: 1px solid #1d1d1f;
+  max-width: 95%;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 ion-item {
@@ -97,6 +101,9 @@ ion-accordion-group {
   overflow: hidden;
   background: #fdfdfd;
   border: 1px solid #1d1d1f;
+  margin: auto;
+  margin-bottom: 30px;
+  max-width: 95%;
 }
 
 ion-accordion {
@@ -111,6 +118,11 @@ ion-item[slot='header'] {
   --padding-start: 16px;
   --padding-end: 16px;
   font-weight: 600;
+}
+
+ion-badge {
+  width: 80px;
+  margin-right: none;
 }
 
 ion-badge[color='success'] {
@@ -128,7 +140,7 @@ ion-badge[color='danger'] {
 .details {
   padding: 12px 16px;
   color: #1d1d1f;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #fdfdfd;
   p { margin: 4px 0; }
 }
