@@ -1,0 +1,7 @@
+{
+  "name": "ITIPT02_Lab2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

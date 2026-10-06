@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+ion-content {
+  --background: #c8f7c5;
+  font-family: 'Inter', sans-serif;
+}
+
+.banner {
+  --background: #87ceeb;
+  --color: #7b3fa0;
+  font-family: 'Inter', sans-serif;
+}
+
+.theme-button {
+  --color: #7b3fa0;
+  margin-inline-end: 8px;
+}
+
+.theme-swatch {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+
+.sun {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #fdd835;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+#container {
+  padding: 8px;
+}
+
+.summary {
+  text-align: center;
+  color: #1d1d1f;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(40, 40, 42, 0.08);
+  background: #ffffff;
+  font-family: 'Inter', sans-serif;
+  p { margin: 0; }
+  h2 { margin: 4px 0 0; font-size: 2rem; }
+}
+
+.purple { background: #f1d6ff; }
+.green  { background: #edffd6; }
+
+.enter-btn {
+  --background: #ffffff;
+  --color: #1d1d1f;
+  margin-top: 12px;
+  font-family: 'Inter', sans-serif;
+  border: 2px solid #dff4d6;
+  border-radius: 5px;
+}
+
+ion-card {
+  background: #ffffff;
+  color: #1d1d1f;
+  --background: #ffffff;
+  --color: #1d1d1f;
+  border-radius: 12px;
+  border: 1px solid #1d1d1f;
+}
+
+ion-item {
+  --background: #ffffff;
+  --color: #1d1d1f;
+}
+
+ion-input {
+  --background: #ffffff;
+  --color: #1d1d1f;
+  --placeholder-color: #1d1d1f;
+}
+
+ion-input.student-id-input {
+  --highlight-color-focused: #1d1d1f;
+  --highlight-color-valid: #1d1d1f;
+  --highlight-color-invalid: #1d1d1f;
+  --label-color-focused: #1d1d1f;
+}
+
+ion-card-content {
+  background: #ffffff;
+}
+
+ion-accordion-group {
+  border: 3px solid #dff4d6;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fdfdfd;
+  border: 1px solid #1d1d1f;
+}
+
+ion-accordion {
+  --background: #fdfdfd;
+  --color: #1d1d1f;
+  border-bottom: 1px solid #ececec;
+}
+
+ion-item[slot='header'] {
+  --background: #fdfdfd;
+  --color: #1d1d1f;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  font-weight: 600;
+}
+
+ion-badge[color='success'] {
+  --background: #edffd6;
+  --color: #2d5a38;
+  font-weight: 700;
+}
+
+ion-badge[color='danger'] {
+  --background: #ffd6d6;
+  --color: #8a3b3b;
+  font-weight: 700;
+}
+
+.details {
+  padding: 12px 16px;
+  color: #1d1d1f;
+  font-family: 'Inter', sans-serif;
+  background: #fdfdfd;
+  p { margin: 4px 0; }
+}
