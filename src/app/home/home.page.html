@@ -5,15 +5,15 @@
       GEL'S TELETUBABIES
     </ion-title>
     <ion-button slot="end" fill="clear" class="theme-button"
-      aria-label="Cycle background theme" title="Cycle background theme"
+      aria-label="Change background image" title="Change background image"
       (click)="cycleBackgroundTheme()">
-      <span class="theme-swatch" [style.backgroundColor]="backgroundColor" aria-hidden="true"></span>
-      Change Theme
+      <span class="theme-swatch" [style.backgroundImage]="'url(' + backgroundImage + ')'" aria-hidden="true"></span>
+      Change BG
     </ion-button>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" [style.--background]="backgroundColor">
+<ion-content [fullscreen]="true" [style.--background]="'url(' + backgroundImage + ') center / cover no-repeat'">
   <ion-header collapse="condense">
     <ion-toolbar class="banner">
       <ion-title size="large">
@@ -21,9 +21,10 @@
         Gel's Teletubabies
       </ion-title>
       <ion-button slot="end" fill="clear" class="theme-button"
-        aria-label="Cycle background theme" title="Cycle background theme"
+        aria-label="Change background image" title="Change background image"
         (click)="cycleBackgroundTheme()">
-        <span class="theme-swatch" [style.backgroundColor]="backgroundColor" aria-hidden="true"></span>
+        <span class="theme-swatch" [style.backgroundImage]="'url(' + backgroundImage + ')'" aria-hidden="true"></span>
+        Change Background
       </ion-button>
     </ion-toolbar>
   </ion-header>
@@ -52,7 +53,6 @@
       </ion-row>
     </ion-grid>
 
-    <!-- Attendance log -->
     <ion-card>
       <ion-card-content>
         <ion-item>
@@ -68,7 +68,7 @@
       @for (student of students; track student.id; let i = $index) {
         <ion-accordion [value]="student.id">
 
-          <ion-item slot="header" [ngStyle]="{'border-left': '8px solid ' + getColor(i)}">
+          <ion-item slot="header">
             <ion-label>{{ student.name }}</ion-label>
             @if (isPresent(student.id)) {
               <ion-badge color="success">Present</ion-badge>
@@ -77,12 +77,15 @@
             }
           </ion-item>
 
-          <div slot="content" class="details" [ngStyle]="{'background-color': getColor(i), 'color': '#2f2f33'}">
-            <p>ID: {{ student.id }}</p>
-            <p>Name: {{ student.name }}</p>
-            <p>Gender: {{ student.gender }}</p>
-            <p>Course: {{ student.course }}</p>
-            <p>Year: {{ student.year }}</p>
+          <div slot="content" class="details" [ngStyle]="{'background-color': getColor(i)}">
+            <img [src]="student.image" [alt]="student.name + ' profile picture'" class="student-avatar" />
+            <div class="details-copy">
+              <p>ID: {{ student.id }}</p>
+              <p>Name: {{ student.name }}</p>
+              <p>Gender: {{ student.gender }}</p>
+              <p>Course: {{ student.course }}</p>
+              <p>Year: {{ student.year }}</p>
+            </div>
           </div>
 
         </ion-accordion>
